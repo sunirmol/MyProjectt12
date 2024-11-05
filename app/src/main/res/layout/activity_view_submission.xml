@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_to_capture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#90EE90"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crime Reporting Headquarters, Bangladesh"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Savar, Dhaka-1342"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginBottom="10dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_success_icon"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/firlogo"
+        android:layout_gravity="center"
+       /> <!-- Provide content description for accessibility -->
+
+    <TextView
+        android:id="@+id/tv_complaint_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Copy"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_fir_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fir No: [Random Number]"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Information"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_user_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#FF5733"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_complaint_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Information:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_complaint_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#7B3F00"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:text="Download Copy"/>
+
+</LinearLayout>

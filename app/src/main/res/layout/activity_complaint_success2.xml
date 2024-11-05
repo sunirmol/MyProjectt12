@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:ignore="ExtraText">
+
+    <!-- Success Icon -->
+    <ImageView
+        android:id="@+id/iv_success_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tickmark"
+    android:layout_gravity="center"
+    android:contentDescription="Success Icon"
+    android:paddingBottom="20dp" />
+
+    <!-- Success Message -->
+    <TextView
+        android:id="@+id/tv_success_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Submitted Successfully!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- Complaint Details Summary (Optional) -->
+    <TextView
+        android:id="@+id/tv_complaint_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your complaint has been logged. We will follow up soon."
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="#000"
+        android:gravity="center"
+        android:paddingBottom="30dp" />
+    <Button
+        android:id="@+id/btn_view_submission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Submitted Report"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp" />
+    <!-- Button to go back to the main screen or start a new action -->
+    <Button
+        android:id="@+id/btn_back_to_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Dashboard"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:textSize="18sp"
+        android:layout_gravity="center" />
+
+
+</LinearLayout>

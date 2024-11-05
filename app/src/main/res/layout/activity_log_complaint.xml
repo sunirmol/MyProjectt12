@@ -1,0 +1,257 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5DC">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/tv_form_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill up the form to log your complaint"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ScrollView Wrapper for the form fields -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:id="@+id/layout_to_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Complaint Type Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Select Type of Complaint"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="8dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <Spinner
+                    android:id="@+id/spinner_complaint_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/complaint_types"
+                    android:minHeight="48dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Incident Date Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Incident Date"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <EditText
+                    android:id="@+id/et_incident_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Incident Date"
+                    android:minHeight="48dp"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Reporting Date -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Reporting Date"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <EditText
+                    android:id="@+id/et_reporting_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Reporting Date"
+                    android:minHeight="48dp"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Incident Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Incident Location"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <EditText
+                    android:id="@+id/et_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Incident Location"
+                    android:minHeight="48dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Division Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Select Your Division"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <Spinner
+                    android:id="@+id/spinner_divisions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/spinner_divisions"
+                    android:minHeight="48dp"
+                    android:prompt="@string/complaint_type_prompt" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- District Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. Select Your District"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <Spinner
+                    android:id="@+id/spinner_districts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/spinner_districtss"
+                    android:minHeight="48dp"
+                    android:prompt="@string/complaint_type_prompt" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Thana Selection -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. Select Your Thana"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <Spinner
+                    android:id="@+id/spinner_thanas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/spinner_thanas"
+                    android:minHeight="48dp"
+                    android:prompt="@string/complaint_type_prompt" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. Description"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#0000FF"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:minHeight="100dp"
+                    android:gravity="top" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Anonymous Checkbox -->
+            <CheckBox
+                android:id="@+id/checkbox_anonymous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Anonymously"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Anonymous Info -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[You can Submit your Complaint anonymously. Personal information will be hidden]"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:layout_marginTop="8dp" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btn_submit_complaint"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Submit"
+                android:backgroundTint="#00FFFF"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:layout_marginTop="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

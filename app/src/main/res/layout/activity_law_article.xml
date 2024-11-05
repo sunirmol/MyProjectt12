@@ -1,0 +1,139 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar with Home and Logout Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:paddingBottom="16dp">
+
+            <!-- Home Icon -->
+            <ImageView
+                android:id="@+id/homeIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/hioome"
+                android:contentDescription="Home" />
+
+            <!-- Space between icons -->
+            <View
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <!-- Logout Icon -->
+            <ImageView
+                android:id="@+id/logoutIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logouticon"
+                android:contentDescription="Logout" />
+        </LinearLayout>
+
+        <!-- Title: Law and Articles -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Law and Articles of Bangladesh"
+            android:textSize="24sp"
+            android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:paddingBottom="16dp" />
+
+
+        <!-- Law and Article 1 Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="#F1F1F1"
+            android:elevation="4dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Law and Article 1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="গণপ্রজাতন্ত্রী বাংলাদেশের সংবিধান
+১[ বিসমিল্লাহির-রহমানির রহিম
+(দয়াময়, পরম দয়ালু, আল্লাহের নামে)]
+প্রস্তাবনা
+আমরা, বাংলাদেশের জনগণ, ১৯৭১ খ্রীষ্টাব্দের মার্চ মাসের ২৬ তারিখে স্বাধীনতা ঘোষণা করিয়া ২[ জাতীয় স্বাধীনতার জন্য ঐতিহাসিক
+যুদ্ধের] মাধ্যমে স্বাধীন ও সার্বভৌম গণপ্রজাতন্ত্রী বাংলাদেশ প্রতিষ্ঠিত করিয়াছি;
+৩[ আমরা অঙ্গীকার করিতেছি যে, যে সকল মহান আদর্শ আমাদের বীর জনগণকে জাতীয় স্বাধীনতার জন্য যুদ্ধে আত্মনিয়োগ ও বীর
+শহীদদিগকে প্রাণোৎসর্গ করিতে উদ্বুদ্ধ করিয়াছিল সর্বশক্তিমান আল্লাহের উপর পূর্ণ আস্থা ও বিশ্বাস, জাতীয়তাবাদ, গণতন্ত্র
+এবং সমাজতন্ত্র অর্থাৎ অর্থনৈতিক ও সামাজিক সুবিচারের সেই সকল আদর্শ এই সংবিধানের মূলনীতি হইবে;]"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:paddingBottom="16dp" />
+
+            <Button
+                android:id="@+id/downloadPdf1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View and Download Full Law Book"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Law and Article 2 Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="#F1F1F1"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Law and Article 2"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ঢাকা  মহানগর এলাকার জন্য একটি স্বতন্ত্র পুলিশ বাহিনীর গঠন কল্পে প্রণীত আইন৷
+ যেহেতু ঢাকা মহানগরী এলাকার জন্য একটি স্বতন্ত্র পুলিশ বাহিনী গঠন করা সমীচীন ও প্রয়োজনীয়;
+সেহেতু এতদ্বারা নিম্নরূপ আইন করা হইল:-"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:paddingBottom="16dp" />
+
+            <Button
+                android:id="@+id/downloadPdf2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View and Download Full Article Book"
+                android:backgroundTint="#FFFF00"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F9F3E4">
+
+    <!-- Form Title (Fixed at the top) -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Missing Persons Report Form"
+        android:textSize="20sp"
+        android:textColor="#D2691E"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- ScrollView for Form Fields -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#000000"
+            android:elevation="4dp"
+            android:layout_margin="8dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#FFFF00"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="16dp">
+
+            <!-- Name Field -->
+            <EditText
+                android:id="@+id/missingPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:inputType="textPersonName"
+                android:background="@drawable/text_field_background"
+                android:padding="12dp"/>
+
+            <!-- Age Field -->
+            <EditText
+                android:id="@+id/missingPersonAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Age"
+                android:inputType="number"
+                android:background="@drawable/text_field_background"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Gender Selection -->
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:layout_marginStart="16dp"/>
+                <RadioButton
+                    android:id="@+id/radioOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:layout_marginStart="16dp"/>
+            </RadioGroup>
+
+            <!-- Last Seen Location Field -->
+            <EditText
+                android:id="@+id/lastSeenLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Seen Location"
+                android:inputType="text"
+                android:background="@drawable/text_field_background"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Last Seen Date and Time Field -->
+            <EditText
+                android:id="@+id/lastSeenDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Seen Date/Time"
+                android:inputType="datetime"
+                android:background="@drawable/text_field_background"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Physical Description Field -->
+            <EditText
+                android:id="@+id/physicalDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Physical Description"
+                android:inputType="textMultiLine"
+                android:background="@drawable/text_field_background"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Clothing Description Field -->
+            <EditText
+                android:id="@+id/clothingDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clothing Description"
+                android:inputType="textMultiLine"
+                android:background="@drawable/text_field_background"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Image Upload Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Image:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+
+            <ImageView
+                android:id="@+id/selectedImageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:background="#E0E0E0"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:contentDescription="Selected Image Preview"/>
+
+            <!-- Select Image Button -->
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Picture from Gallery"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#6A1B9A"
+                android:layout_marginTop="16dp"
+                android:paddingVertical="12dp"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Report"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#388E3C"
+                android:layout_marginTop="16dp"
+                android:paddingVertical="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

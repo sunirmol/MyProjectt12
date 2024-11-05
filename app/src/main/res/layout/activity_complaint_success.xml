@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complaint_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#ffffff">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crime Reporting Headquarters"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6,Phoenix Road, Fulbaria Dhaka - 1000\nCell: +67837589738,+6783765591\nDate: 11 October 2024."
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Complaint Copy Title -->
+    <TextView
+        android:id="@+id/tv_complaint_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complaint Copy"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <!-- FIR Section -->
+    <TextView
+        android:id="@+id/tv_fir_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIR No: (Random Number)"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- FIR Details -->
+    <TextView
+        android:id="@+id/tv_fir_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details About the FIR"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tv_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. UserID: " />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Name: " />
+
+    <TextView
+        android:id="@+id/tv_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Mobile: " />
+
+    <TextView
+        android:id="@+id/tv_nid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. NID: " />
+
+    <TextView
+        android:id="@+id/tv_complaint_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. Complaint Type: " />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6. Date: " />
+
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8. Location: " />
+    <TextView
+        android:id="@+id/tv_reporting_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reporting Date: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Division: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="District: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_thana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thana: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+    <!-- Print Button -->
+    <Button
+        android:id="@+id/print_copy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print Complaint Copy"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

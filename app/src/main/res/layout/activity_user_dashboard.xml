@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserDashboardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/profileIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/profielle"
+            android:contentDescription="Top Left Image"
+            app:layout_constraintTop_toTopOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp" />
+
+        <!-- Header with Profile and Logout -->
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Profile Button -->
+            <ImageView
+
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:contentDescription="Profile"
+                android:src="@drawable/whiteimagee" />
+
+            <!-- Logout Button -->
+            <ImageView
+                android:id="@+id/logoutIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="Logout"
+                android:src="@drawable/whiteimagee" />
+        </LinearLayout>
+
+        <!-- Main Dashboard with Options -->
+        <Button
+            android:id="@+id/welcomeButton"
+            android:layout_width="0dp"
+            android:layout_height="86dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:backgroundTint="#000000"
+            android:text="Welcome to UserDashboard"
+            android:textSize="25sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerLayout" />
+
+        <View
+            android:id="@+id/dividerLine"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#000000"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/welcomeButton" />
+
+        <GridLayout
+            android:id="@+id/dashboardGrid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:columnCount="2"
+            android:padding="12dp"
+            android:rowCount="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeButton">
+
+            <!-- Log Complaint Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/logComplaintCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FFEB3B"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/logcompliant" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Log Complaint"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- My Complaints Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myComplaintsCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="#3F51B5"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/mycompliantic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Complaints"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- View Case Progress Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewCaseProgressCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FF5722"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/caseprogress" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report for a missing person"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Police Station Near Me Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/policeStationCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="#9C27B0"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="114dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/policestationnearme" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Police Station Near Me"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- View Law/Article Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/viewLawArticleButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="#4CAF50"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/lawarticles_ic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Law and Article"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Missing Report Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/missingReportCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FFC107"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/missingperson" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Report Missing Person"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Crime and Criminal Around You Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/crimeAndCriminalCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="#FF4081"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/crimeicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crime and Criminal Around You"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Give Feedback Button -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/giveFeedbackCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:backgroundTint="#2196F3"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/feedbackicon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Give Feedback"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" /> <!-- Ensure you have a menu file -->
+
+</androidx.drawerlayout.widget.DrawerLayout>

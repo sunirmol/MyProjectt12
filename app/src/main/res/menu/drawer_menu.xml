@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="My Profile"
+        android:icon="@drawable/my_p" /> <!-- Replace with your profile icon -->
+
+     <!-- Replace with your logout icon -->
+
+    <item
+        android:id="@+id/nav_reviews"
+        android:title="Reviews and Ratings"
+        android:icon="@drawable/revf" /> <!-- Replace with your reviews icon -->
+
+    <item
+        android:id="@+id/nav_announcements"
+        android:title="Announcements"
+        android:icon="@drawable/announcemet" /> <!-- Replace with your announcements icon -->
+
+    <item
+        android:id="@+id/nav_privacy"
+        android:title="Privacy and Safety"
+        android:icon="@drawable/prf" /> <!-- Replace with your privacy icon -->
+
+    <item
+        android:id="@+id/nav_contact_us"
+        android:title="For any Query contact with us-\nsunirmol.stu2019@juniv.edu"
+        /> <!-- Replace with your contact icon -->
+
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Logout"
+        android:icon="@drawable/logouttttttt" />
+</menu>

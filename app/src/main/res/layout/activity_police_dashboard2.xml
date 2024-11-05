@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F4F6F9">
+
+    <!-- Header and Summary Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Dashboard Title -->
+        <TextView
+            android:id="@+id/dashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Police Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Summary Information -->
+        <LinearLayout
+            android:id="@+id/summaryContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <!-- Reported Crimes Summary -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#89CFF0"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/totalReportedCrimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="45"
+                    android:textSize="24sp"
+                    android:textColor="#FF5722"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reported Crimes"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!-- Solved Cases Summary -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#DDA0DD"
+                android:padding="16dp"
+                android:layout_margin="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/totalSolvedCases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textSize="24sp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solved Cases"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Scrollable Section starting from Recent Reports -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Recent Reports Section -->
+            <TextView
+                android:id="@+id/recentReportsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent Reports"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp"/>
+
+            <!-- List of Recent Reports -->
+            <ListView
+                android:id="@+id/recentReportsList"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:dividerHeight="1dp"/>
+
+            <!-- Complaint Management Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#708090"
+                android:padding="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complaint Management"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/viewComplaintsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View Complaints"
+                    android:backgroundTint="#FF9800"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- Dropdown menu for complaint types -->
+                <LinearLayout
+                    android:id="@+id/complaintDropdownContainer"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="8dp">
+
+                    <Button
+                        android:id="@+id/viewNormalComplaintsButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anonymous Complaints"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#000000"/>
+
+                    <Button
+                        android:id="@+id/viewAnonymousComplaintsButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Normal Complaints"
+                        android:backgroundTint="#FFFFFF"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- Missing Persons Report Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#CD5C5C"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Missing Persons Report"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/viewMissingReportsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:backgroundTint="#4CAF50"
+                    android:minHeight="48dp"
+                    android:text="View Missing Person Reports"
+                    android:textColor="#FFFFFF" />
+
+<!--                <Button-->
+<!--                    android:id="@+id/addMissingPersonReportButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add Missing Person Report"-->
+<!--                    android:backgroundTint="#4CAF50"-->
+<!--                    android:textColor="#FFFFFF"/>-->
+            </LinearLayout>
+
+<!--            &lt;!&ndash; Crime Monitoring Section &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:background="#FFD700"-->
+<!--                android:padding="16dp"-->
+<!--                android:layout_marginBottom="12dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Crime and Criminal Monitoring"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textColor="#333333"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:paddingBottom="8dp"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/crimesAroundButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="View Crimes and Criminals Around"-->
+<!--                    android:backgroundTint="#673AB7"-->
+<!--                    android:textColor="#FFFFFF"/>-->
+<!--            </LinearLayout>-->
+
+            <!-- User Feedback Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#DA70D6"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Feedback"
+                    android:textSize="18sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/viewFeedbackButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="View User Feedback"
+                    android:backgroundTint="#2196F3"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Action Buttons at Bottom -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="16dp">
+
+<!--                <Button-->
+<!--                    android:id="@+id/addNewReportButton"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Add New Report"-->
+<!--                    android:backgroundTint="#4CAF50"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    android:layout_marginEnd="8dp"/>-->
+
+                <Button
+                    android:id="@+id/manageUsersButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manage Users"
+                    android:backgroundTint="#000000"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="16dp"/>
+            <!-- Other Sections -->
+            <!-- Add more sections here -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

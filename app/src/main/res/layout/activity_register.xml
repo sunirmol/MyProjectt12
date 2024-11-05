@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:gravity="top">
+
+    <!-- Title: Public Registration Form -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Public Registration Form"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="National Crime Reporting Institute"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Savar, Dhaka-1342"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_gravity="center"
+        android:textColor="#333333"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp" />
+<View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Form Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#EEE8AA"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp">
+
+        <!-- 1. Name Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. NAME:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/publicName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter your name"
+                android:background="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 2. NID Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. NID:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/publicNID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter your NID"
+                android:background="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 3. Age Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. AGE:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/publicAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter your age"
+                android:inputType="number"
+                android:background="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 4. Gender Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. GENDER:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <RadioGroup
+                android:id="@+id/genderRadioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp">
+                <RadioButton
+                    android:id="@+id/genderMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"/>
+                <RadioButton
+                    android:id="@+id/genderFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"/>
+                <RadioButton
+                    android:id="@+id/genderOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- 5. Address Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. ADDRESS:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/publicAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter your address"
+                android:background="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 6. Phone Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. PHONE:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/publicPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter your phone number"
+                android:inputType="phone"
+                android:background="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 7. Email Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. EMAIL:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/publicEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:background="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 8. Password Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8. PASSWORD:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/publicPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:background="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- 9. Confirm Password Field -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9. CONFIRM PASSWORD:"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/publicConfirmPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Confirm your password"
+                android:inputType="textPassword"
+                android:background="#FFFFFF"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/publicRegisterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:backgroundTint="#D77B30"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Login Link -->
+    <TextView
+        android:id="@+id/loginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#D77B30"
+        android:text="Login here" />
+
+</LinearLayout>

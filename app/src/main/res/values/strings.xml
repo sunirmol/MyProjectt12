@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">MyProjectt</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!-- Form Titles -->
+    <string name="form_title">Fill up the form to log your complaint</string>
+
+    <!-- Labels -->
+    <string name="select_complaint_type">Select Type of Complaint</string>
+    <string name="incident_date_time">Incident Date and Time</string>
+    <string name="incident_location">Incident Location</string>
+    <string name="select_division">Select Your Division</string>
+    <string name="select_district">Select Your District</string>
+    <string name="select_thana">Select Your Thana</string>
+    <string name="description_label">Description</string>
+    <string name="anonymous_checkbox">Report Anonymously</string>
+    <string name="anonymous_info">You can submit your complaint anonymously. Personal information is not required.</string>
+    <string name="submit_complaint">Submit</string>
+
+    <!-- Spinner Prompts -->
+    <string name="complaint_type_prompt">Select Complaint Type</string>
+    <string name="lorem_ipsum">hghfghf</string>
+    <string-array name="status_options">
+        <item>Solved</item>
+        <item>Pending</item>
+        <item>Closed</item>
+    </string-array>
+
+    <string-array name="complaint_type">
+        <item>Normal Complaints</item>
+        <item>Anonymous Complaints</item>
+    </string-array>
+    <!--    <string-array name="normal_complaints_placeholder">-->
+    <!--        <item>Select Normal Complaint</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="anonymous_complaints_placeholder">-->
+    <!--        <item>Select Anonymous Complaint</item>-->
+    <!--    </string-array>-->
+
+
+    <!-- Complaint Types -->
+    <string-array name="complaint_types">
+        <item>Robbery</item>
+        <item>Assault</item>
+        <item>Theft</item>
+        <item>Eve-Teasing</item>
+        <item>Murder</item>
+        <item>Domestic Violence</item>
+        <item>Fraud</item>
+        <item>Vandalism</item>
+        <item>Kidnapping</item>
+        <item>Sexual Assault</item>
+        <item>Drug Offense</item>
+        <item>Cybercrime</item>
+    </string-array>
+
+    <!-- Division Spinner -->
+    <string-array name="spinner_divisions">
+        <item>Barisal</item>
+        <item>Chattogram</item>
+        <item>Dhaka</item>
+        <item>Khulna</item>
+        <item>Rajshahi</item>
+        <item>Rangpur</item>
+        <item>Sylhet</item>
+    </string-array>
+
+    <!-- District Spinner -->
+    <string-array name="spinner_districtss">
+        <item>Barisal</item>
+        <item>Bhola</item>
+        <item>Bogura</item>
+        <!-- Add the rest as required -->
+    </string-array>
+
+    <!-- Thana Spinner -->
+    <string-array name="spinner_thanas">
+        <item>Barisal Sadar</item>
+        <item>Banaripara</item>
+        <item>Gournadi</item>
+        <!-- Add the rest as required -->
+    </string-array>
+    <string-array name="feedback_categories">
+        <item>Bug Report</item>
+        <item>Suggestion</item>
+        <item>General Feedback</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+
+</resources>
